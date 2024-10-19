@@ -10,56 +10,62 @@
     <div class="main-container">
         <div class="header">
             <h1>Tacky</h1>
-            <button class="btn">+ New Game</button>
+            <button class="btn" id="header-btn">+ New Game</button>
         </div>
         <div class="body">
             <form class="form-container">
                 <div class="form-main-container">
-
                     <div id="player1-info">
                         <h1>Player-1 Info</h1>
                         <div class="form-items">
                             <label for="player1-name">Name:</label>
-                            <input type="text" for="player1-name" id="player1-name" required>                        
+                            <input type="text" for="player1-name" id="player1-name" value="player1">                        
                         </div>
                         <div class="form-items">
                             <label for="symbol">Symbol</label>
-                            <input type="text" for="symbol" maxlength="1" placeholder="X" id="player1-symbol">
+                            <input type="text" for="symbol" maxlength="1" value="X" id="player1-symbol">
                         </div>
                     </div>
                     <div id="player2-info">
                         <h1>Player-2 Info</h1>
                         <div class="form-items">
                             <label for="player2-name">Name:</label>
-                            <input type="text" for="player2-name" id="player2-name" required>
+                            <input type="text" for="player2-name" id="player2-name" value="player2">
                         </div>
 
                         <div class="form-items">
                             <label for="player2-symbol">Symbol</label>
-                            <input type="text" for="player2-symbol" maxlength="1" placeholder="0" id="player2-symbol">
+                            <input type="text" for="player2-symbol" maxlength="1" value="0" id="player2-symbol">
                         </div>
                     </div>
                 </div>
-                    <button class="btn" type="button">Submit</button>
+                <button class="btn" type="button" id="form-btn">Submit</button>
             </form>
             <div class="player-heading">
-                <h3>Player1: X<br>5</h3>
-                <h3>Player2: 0<br>2</h3>
+                <h3 id="player1-heading">
+                    Player1: X
+                </h3>
+                <h3 id="player2-heading">
+                    Player2: 0
+                </h3>
+            </div>
+            <div id="win-banner">
+                <h1>Player won</h1>
             </div>
             <div class="game-board">
 
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
-                <div class="game-tiles"></div>
+                <div class="game-tiles" id="#tile1"></div>
+                <div class="game-tiles" id="#tile2"></div>
+                <div class="game-tiles" id="#tile3"></div>
+                <div class="game-tiles" id="#tile4"></div>
+                <div class="game-tiles" id="#tile5"></div>
+                <div class="game-tiles" id="#tile6"></div>
+                <div class="game-tiles" id="#tile7"></div>
+                <div class="game-tiles" id="#tile8"></div>
+                <div class="game-tiles" id="#tile9"></div>
             
             </div>
-        
+
         </div>
         <div class="footer">
             <span>Made By Utkarsh!</span>
